@@ -1,47 +1,64 @@
-body{
-	position: relative;
-	width: 1440px;
-	height: 1024px;
+* {
+	font-family: "Inter", sans-serif;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 150%;
+}
 
+body {	
 	/* Light blue/light-blue-100 */
-
-	background: #F3F5FC;
-
+	background-color: #F3F5FC;
 }
 
-h1{
-/* Auto layout */
+header{
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+main {
 	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	padding: 0px;
-
-	position: absolute;
-	width: 120px;
-	height: 48px;
-	left: 40px;
-	top: 40px;
-	background: #0A3871;
-	color: white;
-	font-style: bold;
-	font-size: 20px;
-	padding-right: 5px;
-	padding-top: 5px;
-
+	margin-left: 80px;
+	margin-bottom: 50px;
 }
 
+/*
+.input-texto {
+	margin-top: 80px;
+	margin-bottom: 50px;
+}
+*/
+
+.resultado {
+	margin-left: 80px;
+	position: relative;
+	margin-top: 10px;
+	background-image: url("imagens/pesquisa-boneco.svg");
+	background-repeat: no-repeat;
+}
 
 .botoes{
 	display: flex;
+	margin-top: 20px;
 	flex-direction: row;
 	align-items: flex-start;
 	padding: 0px;
     position: absolute;
 	width: 680px;
 	height: 67px;
-	left: 240px;
-	top: 780px;
+	left: 60px;
+	top: 400px;
 	text-align: center;
+
+	/* texto do botao*/
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	color: #FFFFFF;
+	color: #0A3871;
+
 
 }
 
@@ -51,6 +68,7 @@ h1{
 
 }
 
+  
 .cripto{
 
 	display: flex;
@@ -58,20 +76,15 @@ h1{
 	align-items: flex-start;
 	padding: 24px;
 
-	position: static;
-	width: 328px;
-	height: 67px;
-	left: 352px;
-	top: 0px;
-
-	/* Light gray */
-
 	background: #0A3871;
-	/* Dark blue/dark-blue-300 */
 
 	border: 1px solid #0A3871;
 	box-sizing: border-box;
 	border-radius: 24px;
+
+	width: 228px;
+	height: 67px;
+	
 
 	flex: none;
 	order: 1;
@@ -86,7 +99,7 @@ h1{
 	line-height: 19px;
 	text-align: center;
 	color: #FFFFFF;
-}
+} 
 
 .descripto{
 	display: flex;
@@ -95,7 +108,7 @@ h1{
 	padding: 24px;
 
 	position: static;
-	width: 328px;
+	width: 228px;
 	height: 67px;
 	left: 352px;
 	top: 0px;
@@ -121,81 +134,26 @@ h1{
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 19px;
-	text-align: right;
+	text-align: center;
 
 
 	/* Dark blue/dark-blue-300 */
-
 	color: #0A3871;
 }
 
-.bloco-texto{	
-
-	/* NAO ESTA SENDO USADO */
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	padding: 0px;
-
-	position: absolute;
-	width: 800px;
-	height: 800px;
-	left: 240px;
-	top: 40px;
-
-	background: #ccccff;
-
-	border: 1px solid #0A3871;
-	box-sizing: border-box;
-	border-radius: 24px;
+.informacao {
+	font-size: 12px;
 }
 
-textarea{
-	position: absolute;
-	width: 680px;
-	height: 280px;
-	left: 240px;
-	top: 168px;
+footer{
+	margin-left: 10px;
+	margin-top: 10px; 
+	position: fixed;
+	left: 0;
+   	bottom: 0;
+   	width: 30%;
 
-	font-family: 'Inter';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 32px;
-	line-height: 150%;
-	/* identical to box height, or 48px */
 
-	/* Dark blue/dark-blue-300 */
-	color: #0A3871;
-} 
-
- .bloco-resultado textarea{
-	background: lightblue;
-
-	position: absolute;
-	display: block;
-	width:  300px;
-	height: 280px;
-	left: 80px;
-	top: 108px;
-	width: 60%;
-
-}
-
-.bloco-resultado{
-	position: absolute;
-	width: 400px;
-	height: 800px;
-	left: 1000px;
-	top: 40px;
-
-	/* White */
-
-	background: #FFFFFF;
-	/* shadow */
-
-	box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-	border-radius: 32px;
-}
 
 
 

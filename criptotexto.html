@@ -1,24 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
 	<meta charset="UTF-8">
 	<title>Criptotexto</title>
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="criptotexto.css">
+	<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
 <body>
-	<h1>a</h1>
-	<div>
-		<textarea id="texto" rows="10" cols="33" placeholder="Digite aqui o texto a ser cripto ou descriptografado"></textarea>
-	</div>
-	<div class="botoes">
-		<button class="cripto">Cripto</button>
-		<button class="descripto">Descripto</button>
-	</div>
-	<div class="bloco-resultado">
-		<textarea id="resultado"></textarea>
-		
-	</div>
+	<header>
+		<img src="imagens\logo-alura.svg" alt="Logotipo do cabeçalho com inicial">
+	</header>
+	<main class="main">
+		<section>
+			<textarea class="input-text" cols="30" rows="6" placeholder="Digite aqui o texto a ser cripto ou descriptografado"></textarea>
+			<div>
+				<h6 class="informacao">Apenas letras maiúsculas e minúsculas</h6>
+			</div>	
+
+			<div class="botoes">
+				<button class="cripto" onclick="btnEncriptar()">Cripto</button>
+				<button class="descripto" onclick="btnDescriptar()">Descripto</button>
+			</div>
+		</section>
+		<section>
+			<textarea class="resultado" cols="30" rows="6" placeholder="resultado"></textarea>
+		</section>
+			
+	</main>	
+	
+	<script src="script.js"></script>
 </body>
 <footer>Geceler Senefonte - 2022 &#129302;</footer>
 </html>
+
+<!--
+// https://d4swing.com/jr_comedor_
+// https://d4swing.com/robertomatossp
+//https://d4swing.com/brunomeen10
+//https://d4swing.com/casado204d
+//https://d4swing.com/rafaelsousa
+//https://d4swing.com/barbaperi
+//https://d4swing.com/safad_solto -->
+
+
+<!-- queryselectior
+	var teste= resultado do querySelector
+	text.textContext = "novo conteudo"
